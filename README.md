@@ -45,8 +45,9 @@ AutoMSS 是基于AI Agent实现的针对安全事件自动化分析研判的系�
 
 ### 微调模型相关
 
-本案例使用了由[智谱](https://www.zhipuai.cn/)提供的微调模型平台，如需使用本地部署微调模型需要另外配置。
-
+本案例使用了由[智谱](https://www.zhipuai.cn/)提供的ChatGLM2-6B的模型进行微调，微调使用了P-tuing V2的方式来进行，详细的可以参考：
+https://github.com/THUDM/ChatGLM2-6B/tree/main/ptuning，微调完成后，使用fastapi生成调用API接口，输入安全五元组后，直接返回安全事件类型。
+本次以木马分析为例：
 本案例期望的微调模型输出格式如下：
 
 输出：事件名称  事件类型，如：(emp3r0r木马攻击   木马攻击)
