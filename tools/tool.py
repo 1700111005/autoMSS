@@ -1,7 +1,7 @@
 from langchain.agents import tool
 from tools.IP_action import *
 username = 'root'
-password = '12345678?'
+password = '1234'
 
 @tool("tool1")
 def check_files(text:str) -> str:
