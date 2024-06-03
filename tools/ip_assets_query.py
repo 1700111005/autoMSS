@@ -7,8 +7,8 @@ except ImportError:
 # 连接数据库
 def ip_assests(ip:str)->str:
     try:
-        conn = pymysql.connect(host='rm-cn-5yd3fj0ei0004tko.rwlb.rds.aliyuncs.com', port=3306, user='testuser',
-                               password='Testuser@321', db='agent')
+        conn = pymysql.connect(host='test.rwlb.rds.aliyuncs.com', port=3306, user='testuser',
+                               password='Test321', db='agent')
     except pymysql.Error as e:
         print("连接数据库失败，错误信息为：", e)
 
@@ -45,4 +45,4 @@ def ip_assests(ip:str)->str:
     conn.close()
     return xinxi
 if __name__ == '__main__':
-    print(ip_assests("111.32.177.97 37975"))
+    print(ip_assests("ip address 37975"))
