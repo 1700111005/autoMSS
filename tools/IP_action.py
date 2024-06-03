@@ -100,9 +100,9 @@ def check_temp_files(ip_address, username, password, path="/usr/share/bash-compl
 
 if __name__ == "__main__":
     # 你可以在这里进行测试
-    ip_address = '47.93.54.234'
+    ip_address = 'xxxxx'
     username = 'root'
-    password = '1qazXSW@..?'
+    password = 'xxxxx'
 
     malicious_behavior = check_malicious_behavior(ip_address, username, password)
     is_port_2599 = check_port_2599(ip_address, username, password)
