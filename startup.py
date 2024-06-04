@@ -114,7 +114,6 @@ def run_openai_130b_api(q: Queue, run_seq: int = 3, log_level: str = "INFO"):
     :return:
     '''
     import uvicorn
-    import uvicorn
     controller_addr = fschat_controller_address()
     app = create_openai_api_app(controller_addr, log_level=log_level,model_name="130b")
     _set_app_seq(app, q, run_seq)
